@@ -1,0 +1,70 @@
+/* Основной фон */
+.fon_container{
+	-fx-background-color: #1f5bf2; /* Основной цвет фона */
+    -fx-background-radius: 30; /* Скругление углов */
+    -fx-effect: innershadow(gaussian, black, 20, 1, 0, 0);
+}
+
+/* Кнопки в GridPane */
+.grid_pane_fon{
+	-fx-alignment: center;
+}
+
+.grid_pane_fon Button{
+	-fx-max-width: 55px;
+    -fx-max-height: 55px;
+    -fx-background-radius: 10;
+    -fx-background-color: #000000;
+    -fx-font-size: 1.5em; 
+    -fx-font-family: "Myriad Pro";
+    -fx-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+/* Кнопки */
+.button_close{
+    -fx-background-color: #BD1622;
+    -fx-background-radius: 10; /* Сильные скругления углов */
+}
+
+.button_preferens{
+    -fx-background-color: #000000;
+    -fx-background-radius: 45; /* Сильные скругления углов */
+}
+
+/* Заголовок */
+.text_fon{
+    -fx-alignment: center;
+    -fx-font-family: "Myriad Pro";
+    -fx-font-weight: bold;
+    -fx-font-size: 3em; 
+}
+
+/* Hbox */
+.hbox_buttom {
+    -fx-alignment: center;
+}
+
+.hbox_buttom Button{
+    -fx-max-width: 200px;
+    -fx-max-height: 40px;
+    -fx-background-radius: 10;
+    -fx-background-color: #000000;
+    -fx-font-size: 1.5em; 
+    -fx-font-family: "Myriad Pro";
+    -fx-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-margin: 120px;
+}
+
+.hbox_buttom Label{
+    -fx-max-width: 200px;
+    -fx-max-height: 40px;
+    -fx-background-radius: 10;
+    -fx-background-color: #000000;
+    -fx-font-size: 1.5em; 
+    -fx-font-family: "Myriad Pro";
+    -fx-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-margin: 120px;
+}
