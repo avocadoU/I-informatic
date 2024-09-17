@@ -68,3 +68,8 @@
     -fx-font-weight: bold;
     -fx-margin: 120px;
 }
+
+/*Button right*/
+.transparent-button {
+    -fx-background-color: transparent;
+}

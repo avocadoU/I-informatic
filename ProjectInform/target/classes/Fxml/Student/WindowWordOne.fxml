@@ -57,7 +57,7 @@
       </Button>
    </AnchorPane>
    <AnchorPane layoutX="501.0" layoutY="44.0" prefHeight="60.0" prefWidth="60.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="44.0">
-      <Button layoutX="5.0" layoutY="5.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="button_close">
+      <Button fx:id="closeButton" layoutX="5.0" layoutY="5.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="button_close">
          <graphic>
             <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                <Image url="@../../Paints/Close.png" />
@@ -73,7 +73,7 @@
       </Label>
    </AnchorPane>
    <HBox layoutX="41.0" layoutY="310.0" prefHeight="55.0" prefWidth="518.0" styleClass="hbox_buttom" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="41.0">
-      <Button mnemonicParsing="false" text="Назад" textFill="WHITE" HBox.hgrow="ALWAYS">
+      <Button fx:id="backMenuStudent" mnemonicParsing="false" text="Назад" textFill="WHITE" HBox.hgrow="ALWAYS">
          <HBox.margin>
             <Insets left="25.0" right="25.0" />
          </HBox.margin>
@@ -87,4 +87,11 @@
          </padding>
       </Label>
    </HBox>
+   <Button fx:id="buttonRight" layoutX="526.0" layoutY="163.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="50.0" styleClass="transparent-button">
+      <graphic>
+         <ImageView fitHeight="80.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../Paints/button_right.png" />
+         </ImageView>
+      </graphic>
+   </Button>
 </AnchorPane>

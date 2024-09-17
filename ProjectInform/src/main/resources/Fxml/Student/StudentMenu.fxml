@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="login_container" stylesheets="@../../Styles/styles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.projectinform.Controllers.Student.StudentMenuController">
+<AnchorPane fx:id="chapterPane" prefHeight="400.0" prefWidth="600.0" styleClass="login_container" stylesheets="@../../Styles/styles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.projectinform.Controllers.Student.StudentMenuController">
    <VBox layoutX="78.0" layoutY="114.0" prefHeight="186.0" prefWidth="445.0" styleClass="vbox">
-      <Button fx:id="word_next_str" mnemonicParsing="false" styleClass="vbox_but" text="Глава 1: Word">
+      <Button fx:id="wordNextStr" mnemonicParsing="false" styleClass="vbox_but" text="Глава 1: Word">
          <VBox.margin>
             <Insets bottom="10.0" top="10.0" />
          </VBox.margin>
@@ -36,7 +36,7 @@
       </Button>
    </AnchorPane>
    <AnchorPane layoutX="510.0" layoutY="47.0" prefHeight="60.0" prefWidth="60.0" AnchorPane.rightAnchor="49.0" AnchorPane.topAnchor="47.0">
-      <Button layoutX="5.0" layoutY="5.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="button_close">
+      <Button fx:id="closeButton" layoutX="5.0" layoutY="5.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="button_close">
          <graphic>
             <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                <Image url="@../../Paints/Close.png" />
@@ -45,6 +45,6 @@
       </Button>
    </AnchorPane>
    <AnchorPane layoutX="133.0" layoutY="293.0" prefHeight="77.0" prefWidth="336.0" styleClass="anchor_pane">
-      <Button fx:id="back_menu_str" alignment="CENTER" layoutX="122.0" layoutY="18.0" mnemonicParsing="false" styleClass="anchor_pane_bottom" text="Назад" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="122.0" AnchorPane.topAnchor="18.0" />
+      <Button fx:id="backMenuStr" alignment="CENTER" layoutX="122.0" layoutY="18.0" mnemonicParsing="false" styleClass="anchor_pane_bottom" text="Назад" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="122.0" AnchorPane.topAnchor="18.0" />
    </AnchorPane>
 </AnchorPane>

@@ -13,9 +13,9 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="login_container" stylesheets="@../Styles/styles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.projectinform.Controllers.LoginController">
+<AnchorPane fx:id="inputPane" prefHeight="400.0" prefWidth="600.0" styleClass="login_container" stylesheets="@../Styles/styles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.projectinform.Controllers.LoginController">
    <VBox layoutX="122.0" layoutY="293.0" prefHeight="80.0" prefWidth="357.0" styleClass="login_form_container" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="121.0">
-      <Button fx:id="login_bth" mnemonicParsing="false" text="Войти" />
+      <Button fx:id="loginBth" mnemonicParsing="false" text="Войти" />
       <Label fx:id="Error_login" styleClass="error_lbl" text="Ошибка: один из параметро введен не верно" />
    </VBox>
    <GridPane alignment="CENTER_LEFT" hgap="100.0" layoutX="79.0" layoutY="101.0" prefHeight="199.0" prefWidth="442.0" styleClass="grid_pane" vgap="100.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="79.0" AnchorPane.rightAnchor="79.0" AnchorPane.topAnchor="101.0">
@@ -55,7 +55,7 @@
       </Button>
    </AnchorPane>
    <AnchorPane layoutX="500.0" layoutY="37.0" prefHeight="60.0" prefWidth="60.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="37.0">
-      <Button layoutX="5.0" layoutY="5.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="button_close">
+      <Button fx:id="closeButton" layoutX="5.0" layoutY="5.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="button_close">
          <graphic>
             <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                <Image url="@../Paints/Close.png" />
