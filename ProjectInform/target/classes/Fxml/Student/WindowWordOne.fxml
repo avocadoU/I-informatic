@@ -12,8 +12,8 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="fon_container" stylesheets="@../../Styles/stylesWordWindow.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.projectinform.Controllers.Student.WindowWordOneController">
-   <GridPane layoutX="74.0" layoutY="136.0" prefHeight="142.0" prefWidth="452.0" styleClass="grid_pane_fon" AnchorPane.bottomAnchor="122.0" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="74.0" AnchorPane.topAnchor="136.0">
+<AnchorPane prefHeight="600.0" prefWidth="900.0" styleClass="fon_container" stylesheets="@../../Styles/stylesWordWindow.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.projectinform.Controllers.Student.WindowWordOneController">
+   <GridPane layoutX="72.0" layoutY="176.0" prefHeight="261.0" prefWidth="756.0" styleClass="grid_pane_fon" AnchorPane.bottomAnchor="163.0" AnchorPane.leftAnchor="72.0" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="176.0">
       <columnConstraints>
          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -47,25 +47,25 @@
       </Button>
       <Button mnemonicParsing="false" text="8" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
    </GridPane>
-   <AnchorPane layoutX="40.0" layoutY="44.0" prefHeight="60.0" prefWidth="60.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="44.0">
-      <Button layoutX="5.0" layoutY="5.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="button_preferens" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+   <AnchorPane layoutX="40.0" layoutY="44.0" prefHeight="60.0" prefWidth="60.0" AnchorPane.leftAnchor="39.0" AnchorPane.topAnchor="37.0">
+      <Button layoutX="5.0" layoutY="5.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" styleClass="button_preferens" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
          <graphic>
-            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                <Image url="@../../Paints/Preferens.png" />
             </ImageView>
          </graphic>
       </Button>
    </AnchorPane>
-   <AnchorPane layoutX="501.0" layoutY="44.0" prefHeight="60.0" prefWidth="60.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="44.0">
-      <Button fx:id="closeButton" layoutX="5.0" layoutY="5.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="button_close">
+   <AnchorPane layoutX="501.0" layoutY="44.0" prefHeight="60.0" prefWidth="60.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="37.0">
+      <Button fx:id="closeButton" layoutX="5.0" layoutY="5.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" styleClass="button_close">
          <graphic>
-            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                <Image url="@../../Paints/Close.png" />
             </ImageView>
          </graphic>
       </Button>
    </AnchorPane>
-   <AnchorPane layoutX="163.0" layoutY="40.0" prefHeight="68.0" prefWidth="274.0" AnchorPane.leftAnchor="163.0" AnchorPane.rightAnchor="163.0" AnchorPane.topAnchor="40.0">
+   <AnchorPane layoutX="163.0" layoutY="50.0" prefHeight="68.0" prefWidth="274.0" AnchorPane.leftAnchor="163.0" AnchorPane.rightAnchor="163.0" AnchorPane.topAnchor="50.0">
       <Label layoutX="9.0" layoutY="10.0" prefHeight="48.0" prefWidth="257.0" styleClass="text_fon" text="Глава 1: Word" textAlignment="CENTER" textFill="#010000" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="10.0">
          <font>
             <Font name="Nadeem Regular" size="26.0" />
@@ -75,23 +75,27 @@
    <HBox layoutX="41.0" layoutY="310.0" prefHeight="55.0" prefWidth="518.0" styleClass="hbox_buttom" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="41.0">
       <Button fx:id="backMenuStudent" mnemonicParsing="false" text="Назад" textFill="WHITE" HBox.hgrow="ALWAYS">
          <HBox.margin>
-            <Insets left="25.0" right="25.0" />
+            <Insets left="40.0" right="40.0" />
          </HBox.margin>
       </Button>
-      <Label text="300" textFill="WHITE" HBox.hgrow="ALWAYS">
+      <AnchorPane HBox.hgrow="ALWAYS">
          <HBox.margin>
-            <Insets left="25.0" right="25.0" />
+            <Insets left="40.0" right="40.0" />
          </HBox.margin>
-         <padding>
-            <Insets left="125.0" />
-         </padding>
-      </Label>
+         <children>
+            <Label alignment="CENTER" layoutX="181.0" layoutY="14.0" prefHeight="35.0" prefWidth="144.0" styleClass="hbox_arch_pane_label_text" text="0" textFill="WHITE" />
+            <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Paints/I.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
    </HBox>
-   <Button fx:id="buttonRight" layoutX="526.0" layoutY="163.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="50.0" styleClass="transparent-button">
+   <Button fx:id="buttonRight" layoutX="822.0" layoutY="244.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="50.0" styleClass="transparent-button">
       <graphic>
-         <ImageView fitHeight="80.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+         <ImageView fitHeight="115.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@../../Paints/button_right.png" />
          </ImageView>
-      </graphic>
-   </Button>
+      </graphic></Button>
 </AnchorPane>

@@ -9,17 +9,17 @@
 
 .text_login_container{
     -fx-alignment: center;
-    -fx-font-size: 3em;
+    -fx-font-size: 4em;
     -fx-font-family: "Myriad Pro";
-    -fx-fill: black;
+    -fx-fill: #0d0d0d;
     -fx-font-weight: bold;
 }
 
 /* Text in menu */
 .text_selecter_menu {
     -fx-font-family: "Myriad Pro";
-    -fx-font-size: 1.5em;
-    -fx-fill: #000000;
+    -fx-font-size: 2.5em;
+    -fx-fill: #0d0d0d;
     -fx-font-weight: bold;
     -fx-letter-spacing: 1em; 
 }
@@ -72,8 +72,25 @@
 }
 
 .grid_pane TextField {
-    -fx-max-width: 200px; /* Устанавливаем максимальную ширину в пикселях */
-    -fx-max-height: 20px; /* Устанавливаем максимальную высоту в пикселях */
+    -fx-max-width: 260px; /* Устанавливаем максимальную ширину в пикселях */
+    -fx-max-height: 40px; /* Устанавливаем максимальную высоту в пикселях */
+    -fx-font-size: 1.1em; /* Размер шрифта текстового поля */
+    -fx-background-color: #000000; /* Черный цвет фона */
+    -fx-background-radius: 20; /* Сильные скругления углов */
+    -fx-font-fill: white;
+}
+
+.grid_pane PasswordField {
+    -fx-max-width: 260px; /* Устанавливаем максимальную ширину в пикселях */
+    -fx-max-height: 40px; /* Устанавливаем максимальную высоту в пикселях */
+    -fx-font-size: 1.1em; /* Размер шрифта текстового поля */
+    -fx-background-color: #000000; /* Черный цвет фона */
+    -fx-background-radius: 20; /* Сильные скругления углов */
+}
+
+.grid_pane ChoiceBox {
+    -fx-max-width: 260px; /* Устанавливаем максимальную ширину в пикселях */
+    -fx-max-height: 40px; /* Устанавливаем максимальную высоту в пикселях */
     -fx-font-size: 1.1em; /* Размер шрифта текстового поля */
     -fx-background-color: #000000; /* Черный цвет фона */
     -fx-background-radius: 20; /* Сильные скругления углов */
@@ -94,7 +111,7 @@
 .login_form_container Button{
     -fx-background-color: black;
     -fx-text-fill: #FFFFFF;
-    -fx-pref-width: 120;
+    -fx-pref-width: 200;
     -fx-pref-height: 40;
     -fx-font-size: 1.4em;
     -fx-background-radius: 20;
@@ -135,8 +152,8 @@
 .vbox_but{
     -fx-background-color: black;
     -fx-text-fill: #FFFFFF;
-    -fx-font-size: 1.7em;
-    -fx-background-radius: 20;
+    -fx-font-size: 2.7em;
+    -fx-background-radius: 40;
     -fx-alignment: center;
     -fx-font-family: "Myriad Pro";
     -fx-font-weight: bold;
@@ -147,7 +164,7 @@
     -fx-background-color: black;
     -fx-text-fill: #FFFFFF;
     -fx-font-size: 1.7em;
-    -fx-background-radius: 20;
+    -fx-background-radius: 30;
     -fx-alignment: center;
     -fx-font-family: "Myriad Pro";
     -fx-font-weight: bold;

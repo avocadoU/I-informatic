@@ -11,11 +11,11 @@
 }
 
 .grid_pane_fon Button{
-	-fx-max-width: 55px;
-    -fx-max-height: 55px;
+	-fx-max-width: 90px;
+    -fx-max-height: 90px;
     -fx-background-radius: 10;
     -fx-background-color: #000000;
-    -fx-font-size: 1.5em; 
+    -fx-font-size: 3em; 
     -fx-font-family: "Myriad Pro";
     -fx-fill: #ffffff;
     -fx-font-weight: bold;
@@ -37,7 +37,7 @@
     -fx-alignment: center;
     -fx-font-family: "Myriad Pro";
     -fx-font-weight: bold;
-    -fx-font-size: 3em; 
+    -fx-font-size: 5em; 
 }
 
 /* Hbox */
@@ -46,30 +46,46 @@
 }
 
 .hbox_buttom Button{
-    -fx-max-width: 200px;
-    -fx-max-height: 40px;
-    -fx-background-radius: 10;
+    -fx-max-width: 300px;
+    -fx-max-height: 80px;
+    -fx-background-radius: 40;
     -fx-background-color: #000000;
-    -fx-font-size: 1.5em; 
+    -fx-font-size: 2.5em; 
     -fx-font-family: "Myriad Pro";
     -fx-fill: #ffffff;
     -fx-font-weight: bold;
-    -fx-margin: 120px;
+    -fx-margin: 200px;
 }
 
-.hbox_buttom Label{
-    -fx-max-width: 200px;
-    -fx-max-height: 40px;
-    -fx-background-radius: 10;
+.hbox_buttom AnchorPane{
+    -fx-max-width: 300px;
+    -fx-max-height: 80px;
+    -fx-background-radius: 40;
     -fx-background-color: #000000;
-    -fx-font-size: 1.5em; 
+    -fx-font-size: 2em; 
     -fx-font-family: "Myriad Pro";
     -fx-fill: #ffffff;
     -fx-font-weight: bold;
-    -fx-margin: 120px;
+    -fx-margin: 200px;
+}
+
+.hbox_arch_pane_label_text{
+    -fx-font-size: 1.5em; 
+    -fx-font-family: "Myriad Pro";
+    -fx-font-weight: bold;
 }
 
 /*Button right*/
 .transparent-button {
     -fx-background-color: transparent;
+}
+
+.buttom_contrl_work{
+    -fx-background-radius: 40;
+    -fx-background-color: #000000;
+    -fx-font-size: 2em; 
+    -fx-font-color: white;
+    -fx-font-family: "Myriad Pro";
+    -fx-fill: #ffffff;
+    -fx-font-weight: bold;
 }
