@@ -20,6 +20,9 @@ public class WindowWordOneController implements Initializable {
     @FXML
     private Button closeButton;
 
+    @FXML
+    private Button taskOneWord;
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -38,6 +41,10 @@ public class WindowWordOneController implements Initializable {
         closeButton.setOnAction(event -> {
             Stage stage = (Stage) closeButton.getScene().getWindow();
             stage.close();
+        });
+
+        taskOneWord.setOnAction(event -> {
+
         });
     }
 }
