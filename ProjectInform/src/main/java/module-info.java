@@ -5,12 +5,17 @@ module org.example.projectinform {
     requires java.sql;
     requires org.xerial.sqlitejdbc;
     requires java.desktop;
+    requires static lombok;
 
 
-    opens org.example.projectinform to javafx.fxml;
-    opens org.example.projectinform.Controllers to javafx.fxml;
-    opens org.example.projectinform.Controllers.Student to javafx.fxml;
     exports org.example.projectinform;
-    exports org.example.projectinform.Controllers;
+    opens org.example.projectinform to javafx.fxml;
     exports org.example.projectinform.Controllers.Student;
+    opens org.example.projectinform.Controllers.Student to javafx.fxml;
+    exports org.example.projectinform.Controllers.WindowWord;
+    opens org.example.projectinform.Controllers.WindowWord to javafx.fxml;
+    exports org.example.projectinform.Controllers.WindowGame;
+    opens org.example.projectinform.Controllers.WindowGame to javafx.fxml;
+    exports org.example.projectinform.Controllers.WindowEnterAndInput;
+    opens org.example.projectinform.Controllers.WindowEnterAndInput to javafx.fxml;
 }

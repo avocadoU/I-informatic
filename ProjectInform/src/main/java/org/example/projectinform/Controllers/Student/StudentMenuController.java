@@ -1,14 +1,11 @@
 package org.example.projectinform.Controllers.Student;
 
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.stage.Stage;
+import org.example.projectinform.SpecialMethods.SpecialMethodsClass;
 
-import java.io.IOException;
+
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -25,34 +22,12 @@ public class StudentMenuController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        backMenuStr.setOnAction(event -> {
-            try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Login.fxml"));
-                Parent root = loader.load();
-                Scene scene = new Scene(root);
-                Stage stage = (Stage) backMenuStr.getScene().getWindow();
-                stage.setScene(scene);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
 
+        SpecialMethodsClass.switchWindow(backMenuStr, "/Fxml/WindowEnterAndInput/Login.fxml");
 
-        wordNextStr.setOnAction(event -> {
-            try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Student/WindowWordOne.fxml"));
-                Parent root = loader.load();
-                Scene scene = new Scene(root);
-                Stage stage = (Stage) wordNextStr.getScene().getWindow();
-                stage.setScene(scene);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
+        SpecialMethodsClass.switchWindow(wordNextStr, "/Fxml/WindowWord/WindowWordOne.fxml");
 
-        closeButton.setOnAction(event -> {
-            Stage stage = (Stage) closeButton.getScene().getWindow();
-            stage.close();
-        });
+        SpecialMethodsClass.closeWindow(closeButton);
+
     }
 }

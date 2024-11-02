@@ -77,7 +77,8 @@
     -fx-font-size: 1.1em; /* Размер шрифта текстового поля */
     -fx-background-color: #000000; /* Черный цвет фона */
     -fx-background-radius: 20; /* Сильные скругления углов */
-    -fx-font-fill: white;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
 }
 
 .grid_pane PasswordField {
@@ -168,4 +169,11 @@
     -fx-alignment: center;
     -fx-font-family: "Myriad Pro";
     -fx-font-weight: bold;
+}
+
+.text_fon{
+    -fx-alignment: center;
+    -fx-font-family: "Myriad Pro";
+    -fx-font-weight: bold;
+    -fx-font-size: 5em;
 }
