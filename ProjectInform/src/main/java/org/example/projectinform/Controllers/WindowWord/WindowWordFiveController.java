@@ -9,7 +9,7 @@ import org.example.projectinform.SpecialMethods.SpecialMethodsClass;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class WindowWordFourController implements Initializable {
+public class WindowWordFiveController implements Initializable {
 
     @FXML
     private Button backMenuStudent;
@@ -41,9 +41,7 @@ public class WindowWordFourController implements Initializable {
 
         SpecialMethodsClass.switchSettings(settingsButton, "/Fxml/WindowWord/SettingsWindowWord.fxml");
 
-        SpecialMethodsClass.switchWindow(nextWindow, "/Fxml/WindowWord/WindowWordControlWorkFour.fxml");
-
-        SpecialMethodsClass.switchWindow(lastWindow, "/Fxml/WindowWord/WindowWordControlWorkThree.fxml");
+        SpecialMethodsClass.switchWindow(lastWindow, "/Fxml/WindowWord/WindowWordControlWorkFour.fxml");
 
         SpecialMethodsClass.closeWindow(closeButton);
     }
